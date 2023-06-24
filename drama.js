@@ -11,38 +11,60 @@ let features = [
     "Shaders",
     "Mushroom Tofu",
     "Spice of life",
+    "Optifine Support"
+]
+
+// %& = him her their
+// %% = his her their
+
+let selfDamage = [
+    "blows %&self up on the IGBLON SMP",
+    "deletes %% discord account",
+    "deletes %% youtube account",
 ]
 
 let people = [
     {
         "name": 'Tech22',
-        "groups": ["Gregtech CEU discord", "Gregtech Intergalactical discord", "Technological Journey discord", "GTNH discord"]
+        "groups": ["Gregtech CEU discord", "Gregtech Intergalactical discord", "Technological Journey discord", "GTNH discord"],
+        "projects": ["GTCEU"],
+        "pronouns": ["him", "his"]
     },
     {
         "name": "GregoriousT",
-        "groups": ["Gregtech Intergalactial Discord", "IC2 Forums"]
+        "groups": ["Gregtech Intergalactial Discord", "IC2 Forums"],
+        "projects": ["GT6"],
+        "pronouns": ["him", "his"]
     },
     {
         "name": "IGBLON",
-        "groups": ["IGBLONcord", "Gregtech CEU discord"]
+        "groups": ["IGBLONcord", "Gregtech CEU discord"],
+        "projects": ["Supersymmetry"],
+        "pronouns": ["him", "his"]
     },
     {
         "name": "Threefold",
-        "groups": ["Threefold Discord", "Gregtech CEU discord", "Technological Journey discord", "Nomifactory discord"]
+        "groups": ["Threefold Discord", "Gregtech CEU discord", "Technological Journey discord", "Nomifactory discord"],
+        "projects": ["Trifecta"],
+        "pronouns": ["him", "his"]
     },
     {
         "name": "Technici4n",
-        "groups": ["Gregtech CEU discord", "MI discord"]
+        "groups": ["Gregtech CEU discord", "MI discord"],
+        "projects": ["Modern Industrialization"],
+        "pronouns": ["him", "his"]
     },
     {
         "name": "Exa",
-        "groups": ["Nomifactory discord", "Gregtech CEU discord"]
+        "groups": ["Nomifactory discord", "Gregtech CEU discord"],
+        "projects": ["Nomifactory", "GTCE"],
+        "pronouns": ["him", "his"]
     }
 ]
 
 let drama = [
-    ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because he added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages"],
-    []
+    ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because he added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages", "."],
+    ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and adds", "$FEATURE", ".", "$VAR 1", "$SELFDAMAGE 1", "."]
 ]
 
 function randomInt(min, max) {
@@ -61,15 +83,17 @@ function genDrama(){
     for(let i = 0; i < dramatics.length; i++){
         let item = dramatics[i];
 
-        if(item != "." && i != 0){
+        if(item != "." && i != 0 && !item.endsWith("HIDDEN")){
             dramaString += " "
         }
 
-        if(item == "$NEWNAME"){
+        if(item.startsWith("$NEWNAME")){
             let chosenPerson = people[randomInt(0, people.length - 1)]
             variables.push(chosenPerson)
 
-            dramaString += chosenPerson.name
+            if(!item.endsWith("HIDDEN")){
+                dramaString += chosenPerson.name
+            }
         }
         else if(item == "$FEATURE"){
             let chosenFeature = features[randomInt(0, features.length - 1)]
@@ -83,6 +107,17 @@ function genDrama(){
 
             dramaString += chosenGroup
         }
+        else if(item.startsWith("$SELFDAMAGE")){
+            let chosenDamage = selfDamage[randomInt(0, selfDamage.length - 1)]
+            variables.push(chosenDamage)
+
+            let person = item.split(" ")[1]
+
+            chosenDamage = chosenDamage.replace('%&', variables[person].pronouns[0])
+            chosenDamage = chosenDamage.replace('%%', variables[person].pronouns[1])
+
+            dramaString += chosenDamage
+        }
         else if(item.startsWith("$VAR")){
             let parts = item.split(" ")
             let index = parts[1]
@@ -91,6 +126,10 @@ function genDrama(){
                 if(keyword == "GROUP"){
                     let possibleGroups = variables[index].groups
                     dramaString += possibleGroups[randomInt(0, possibleGroups.length - 1)]
+                }
+                else if(keyword == "PROJECT"){
+                    let possibleProjects = variables[index].projects
+                    dramaString += possibleProjects[randomInt(0, possibleProjects.length - 1)]
                 }
             }
             else{
@@ -106,8 +145,6 @@ function genDrama(){
             dramaString += item
         }
     }
-
-    dramaString += "."
 
     dramatext.innerHTML = dramaString
 }
