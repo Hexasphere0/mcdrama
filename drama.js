@@ -25,6 +25,19 @@ let selfDamage = [
     "deletes %% youtube account",
 ]
 
+let futureProjects = [
+    "DJ3", 
+    "Gregtech CEU 1.19",
+    "Gregtech 7",
+    "Chromaticraft 1.20",
+    "Create 1.12"
+]
+
+let youtubers = [
+    "IGBLON",
+    "Threefold"
+]
+
 let people = [
     {
         "name": 'Tech22',
@@ -40,7 +53,7 @@ let people = [
     },
     {
         "name": "IGBLON",
-        "groups": ["IGBLONcord", "Gregtech CEU discord"],
+        "groups": ["IGBLONcord", "Gregtech CEU discord", "PGS"],
         "projects": ["Supersymmetry"],
         "pronouns": ["him", "his", "he"]
     },
@@ -90,7 +103,9 @@ let people = [
 
 let drama = [
     ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because", "$VAR 1 PRONOUNS", "added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages", "."],
-    ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and adds", "$FEATURE", ".", "$VAR 1", "$SELFDAMAGE 1", "."]
+    ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and adds", "$FEATURE", ".", "$VAR 1", "$SELFDAMAGE 1", "."],
+    ["$NEWNAME", "stops watching too much", "$YOUTUBER", "and starts contributing to the community.", "$FUTURE_PROJECT", "is finally released."],
+    ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ". The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."]
 ]
 
 function randomInt(min, max) {
@@ -132,6 +147,18 @@ function genDrama(){
             variables.push(chosenGroup)
 
             dramaString += chosenGroup
+        }
+        else if(item == "$FUTURE_PROJECT"){
+            let chosenProject = futureProjects[randomInt(0, futureProjects.length - 1)]
+            variables.push(chosenProject)
+
+            dramaString += chosenProject
+        }
+        else if(item == "$YOUTUBER"){
+            let chosenYoutuber = youtubers[randomInt(0, youtubers.length - 1)]
+            variables.push(chosenYoutuber)
+
+            dramaString += chosenYoutuber
         }
         else if(item.startsWith("$SELFDAMAGE")){
             let chosenDamage = selfDamage[randomInt(0, selfDamage.length - 1)]
