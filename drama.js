@@ -13,7 +13,8 @@ let features = [
     "Spice of life",
     "Optifine Support",
     "Solar panels",
-    "Dayblooms"
+    "Dayblooms",
+    "the Stargate"
 ]
 
 // %& = him her their
@@ -98,6 +99,12 @@ let people = [
         "groups": ["Create discord"],
         "projects": ["Create", "Create Above & Beyond"],
         "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Mcjty",
+        "groups": ["Mcjty discord"],
+        "projects": ["RFTools"],
+        "pronouns": ["him", "his", "he"]
     }
 ]
 
@@ -105,7 +112,9 @@ let drama = [
     ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because", "$VAR 1 PRONOUNS", "added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages", "."],
     ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and adds", "$FEATURE", ".", "$VAR 1", "$SELFDAMAGE 1", "."],
     ["$NEWNAME", "stops watching too much", "$YOUTUBER", "and starts contributing to the community.", "$FUTURE_PROJECT", "is finally released."],
-    ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ". The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."]
+    ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ".", "The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
+    ["$NEWNAME", "drops", "$FEATURE", "support from", "$VAR 0 PROJECT", ".", "The", "$GENERIC_GROUP", "rages."],
+    ["Microsoft buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince Jeff Bezos to buy Microsoft and delete Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."]
 ]
 
 function randomInt(min, max) {
