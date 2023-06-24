@@ -107,7 +107,25 @@ let people = [
         "groups": ["Mcjty discord"],
         "projects": ["RFTools"],
         "pronouns": ["him", "his", "he"]
-    }
+    },
+    {
+        "name": "DreamMasterXXL",
+        "groups": ["GTNH discord"],
+        "projects": ["GTNH", "GT5U"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Jeb",
+        "groups": ["Minecraft discord"],
+        "projects": ["Minecraft"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Colen",
+        "groups": ["GTNH discord"],
+        "projects": ["GTNH", "GT5U"],
+        "pronouns": ["him", "his", "he"]
+    },
 ]
 
 let drama = [
