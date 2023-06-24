@@ -41,7 +41,8 @@ let people = [
 ]
 
 let drama = [
-    ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because he added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages"]
+    ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because he added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages"],
+    []
 ]
 
 function randomInt(min, max) {
