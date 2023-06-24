@@ -27,11 +27,13 @@ let selfDamage = [
 ]
 
 let futureProjects = [
-    "DJ3", 
+    "Divine Journey 3", 
     "Gregtech CEU 1.19",
     "Gregtech 7",
     "Chromaticraft 1.20",
-    "Create 1.12"
+    "Create 1.12",
+    "Luxite",
+    "Technological Journey 2"
 ]
 
 let youtubers = [
@@ -114,7 +116,8 @@ let drama = [
     ["$NEWNAME", "stops watching too much", "$YOUTUBER", "and starts contributing to the community.", "$FUTURE_PROJECT", "is finally released."],
     ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ".", "The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
     ["$NEWNAME", "drops", "$FEATURE", "support from", "$VAR 0 PROJECT", ".", "The", "$GENERIC_GROUP", "rages."],
-    ["Microsoft buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince Jeff Bezos to buy Microsoft and delete Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."]
+    ["Microsoft buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince Jeff Bezos to buy Microsoft and delete Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."],
+    ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 1", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."]
 ]
 
 function randomInt(min, max) {
