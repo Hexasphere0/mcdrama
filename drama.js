@@ -54,7 +54,8 @@ let modloaders = [
     "MinecraftForge",
     "Fabric Loader",
     "LiteLoader",
-    "DarkMod"
+    "DarkMod",
+    "Rift"
 ]
 
 let people = [
