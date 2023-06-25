@@ -202,10 +202,11 @@ let drama = [
     ["$NEWNAME", "said GREGTECH SUCKS."],
     ["$NEWNAME", "and", "$NEWNAME", "obtain the stargate, to the dismay of", "DreamMasterXXL", ".", "He secretly bans them from the", "GTNH discord", "."],
     ["$NEWNAME", "added", "$FEATURE", "to", "$VAR 0 PROJECT", "to the dismay of", "$GENERIC_GROUP", "."],
-    ["$NEWNAME", "refuses to support", "$NEWNAME HIDDEN", "$VAR 1 PROJECT"],
-    ["$NEWNAME", "renames", "$VAR 0 PROJECT", "to", "$NEWNAME HIDDEN", "$VAR 1 PROJECT"],
-    ["$NEWNAME", "adds", "$FEATURE", "to", "$VAR 0 PROJECT"],
-    ["$NEWNAME", "makes EVERYONE admin on", "$NEWNAME 0 GROUP"]
+    ["$NEWNAME", "refuses to support", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "."],
+    ["$NEWNAME", "renames", "$VAR 0 PROJECT", "to", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "."],
+    ["$NEWNAME", "adds", "$FEATURE", "to", "$VAR 0 PROJECT", "."],
+    ["$NEWNAME", "makes EVERYONE admin on", "$VAR 0 GROUP", "."],
+    ["$NEWNAME", "closes", "$NEWNAME", "'s", "pull request", "adding", "$FEATURE", "to the dismay of", "$GENERIC_GROUP", "."]
 ]
 
 function randomInt(min, max) {
