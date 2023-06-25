@@ -212,7 +212,7 @@ let imageMappings = {
     "Gregtech 7":                "futureProjects/gregtech_7.svg",
     "Chromaticraft 1.20":        "futureProjects/chromaticraft_1_20.png",
     "Create 1.12":               "futureProjects/create_1_12.png",
-    "Luxite":                    "futureProjects/luxite.webp",
+    "Luxite":                    "futureProjects/luxite.png",
     "Technological Journey 2":   "futureProjects/technological_journey_2.png",
     //youtubers
     "IGBLON":      "youtubers/igblon.jpg",
@@ -224,7 +224,7 @@ let imageMappings = {
     "LiteLoader":       "modloaders/lite_loader.png",
     "DarkMod":          "modloaders/darkmod.png",
     "Rift":             "modloaders/rift.png",
-    "modloader":        "modloaders/modloader.webp",
+    "modloader":        "modloaders/modloader.jpg",
     //people
     "Tech22":            "people/tech22.png",
     "GregoriousT":       "people/gregorious_t.png",
@@ -446,11 +446,12 @@ function genDrama()
                 }
                 else{
                     dramaString += variables[index]
+                    imageSequence.push(variables[index])
                 }
             }
         }
         else{
-            if(item == "Microsoft" || item == "Jeff Bezos" || item == "Create" || item == "launcher" || item == "Curseforge"){
+            if(item == "Microsoft" || item == "Jeff Bezos" || item == "Create" || item == "launcher" || item == "Curseforge" || item == "Minecraft"){
                 imageSequence.push(item)
             }
             dramaString += item
