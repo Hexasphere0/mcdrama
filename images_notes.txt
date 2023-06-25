@@ -1,0 +1,91 @@
+people:
+    {
+        "name": 'Tech22',
+        "groups": ["Gregtech CEU discord", "Gregtech Intergalactical discord", "Technological Journey discord", "GTNH discord"],
+        "projects": ["GTCEU"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "GregoriousT",
+        "groups": ["Gregtech Intergalactial Discord", "IC2 Forums"],
+        "projects": ["GT6"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "IGBLON",
+        "groups": ["IGBLONcord", "Gregtech CEU discord", "PGS"],
+        "projects": ["Supersymmetry"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Threefold",
+        "groups": ["Threefold discord", "Gregtech CEU discord", "Technological Journey discord", "Nomifactory discord", "DJ2 discord", "Create discord"],
+        "projects": ["Trifecta"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Technici4n",
+        "groups": ["Gregtech CEU discord", "MI discord"],
+        "projects": ["Modern Industrialization"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Exa",
+        "groups": ["Nomifactory discord", "Gregtech CEU discord"],
+        "projects": ["Nomifactory", "GTCE"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Jellysquid",
+        "groups": ["CaffieneMC discord"],
+        "projects": ["Sodium", "Hytale"],
+        "pronouns": ["her", "her", "she"]
+    },
+    {
+        "name": "Vazkii",
+        "groups": ["CaffieneMC"],
+        "projects": ["Quark", "Botania", "Patchouli", "Psi"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Atricos",
+        "groups": ["Threefold discord", "DJ2 discord"],
+        "projects": ["DJ2", "DJ3"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Simibubi",
+        "groups": ["Create discord"],
+        "projects": ["Create", "Create Above & Beyond"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Mcjty",
+        "groups": ["Mcjty discord"],
+        "projects": ["RFTools"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "DreamMasterXXL",
+        "groups": ["GTNH discord"],
+        "projects": ["GTNH", "GT5U"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Jeb",
+        "groups": ["Minecraft discord"],
+        "projects": ["Minecraft"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "Colen",
+        "groups": ["GTNH discord"],
+        "projects": ["GTNH", "GT5U"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "PrototypeTrousers",
+        "groups": ["Gregtech CEU discord"],
+        "projects": ["AE2: Trousers Edition", "Gregtech CEU"],
+        "pronouns": ["him", "his", "he"]
+    }
