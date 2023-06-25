@@ -97,7 +97,7 @@ let people = [
     },
     {
         "name": "GregoriousT",
-        "groups": ["Gregtech Intergalactial Discord", "IC2 Forums"],
+        "groups": ["Gregtech Intergalactial discord", "IC2 Forums"],
         "projects": ["GT6"],
         "pronouns": ["him", "his", "he"]
     },
@@ -235,19 +235,17 @@ let imageMappings = {
     "Jellysquid":        "people/jellysquid.png",
     "Vazkii":            "people/vazkii.png",
     "Atricos":           "people/atricos.jpg",
-    "Simibubi":          "people/simibubi.png",
+    "Simibubi":          "people/simibubi.jpg",
     "Mcjty":             "people/mcjty.png",
     "DreamMasterXXL":    "people/dreammasterxxl.png",
     "Jeb":               "people/jeb.png",
     "Colen":             "people/colen.png",
     "PrototypeTrousers": "people/prototypetrousers.png",
     //groups
-    "Gregtech CEU discord":               "groups/gregtech_ceu_discord.webp",
-    "Gregtech Intergalactical discord":   "groups/gregtech_intergalactical_discord.webp",
-    "Technological Journey discord":      "groups/technological_journey_discord.webp",
-    "GTNH discord":                       "groups/gtnh_discord.webp",
-    //dupe? with different caps?
-    "Gregtech Intergalactial Discord":    "groups/gregtech_intergalactical_discord.webp",
+    "Gregtech CEU discord":               "projects/gtceu.png",
+    "Gregtech Intergalactical discord":   "groups/gregtech_intergalactical_discord.png",
+    "Technological Journey discord":      "groups/technological_journey_discord.png",
+    "GTNH discord":                       "groups/gtnh_discord.png",
     "IC2 Forums":                         "groups/ic2_forums.png",
     "IGBLONcord":                         "groups/igblon.jpg",
     "PGS":                                "groups/pgs.png",
@@ -255,10 +253,10 @@ let imageMappings = {
     "Nomifactory discord":                "groups/nomifactory.png",
     "DJ2 discord":                        "groups/dj2.png",
     "Create discord":                     "groups/create_discord.png",
-    "MI discord":                         "groups/mi_discord.webp",
+    "MI discord":                         "projects/modern_industrialization.png",
     "CaffieneMC discord":                 "groups/caffiene_mc_discord.png",
     "CaffieneMC":                         "groups/caffiene_mc.png",
-    "Mcjty discord":                      "groups/mcjty_discord.webp",
+    "Mcjty discord":                      "groups/mcjty_discord.png",
     "Minecraft discord":                  "groups/minecraft_discord.png",
     "MMD":                                "groups/mmd.png",
     //projects
@@ -288,7 +286,8 @@ let imageMappings = {
     // misc
     "Microsoft":          "misc/Microsoft.png",
     "Jeff Bezos":         "misc/JeffBezos.jpg",
-    "Minecraft":          "misc/Minecraft.jpg"
+    "Minecraft":          "misc/Minecraft.jpg",
+    "launcher":           "misc/launcher.png"
 };
 
 // Function to retrieve the image based on the phrase and display it
@@ -322,9 +321,9 @@ let drama = [
     ["$NEWNAME", "drops", "$FEATURE", "support from", "$VAR 0 PROJECT", ".", "The", "$GENERIC_GROUP", "rages."],
     ["Microsoft", "buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince", "Jeff Bezos", "to buy", "Microsoft", "and delete", "Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."],
     ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 0", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."],
-    ["$NEWNAME", "tried to port Create to 1.12. The police arrested him and gave him a 25 year sentence in jail."],
+    ["$NEWNAME", "tried to port", "Create", "to 1.12. The police arrested him and gave him a 25 year sentence in jail."],
     ["$NEWNAME", "took control of", "$VAR 0 PROJECT", "and kicked all the other devs out."],
-    ["$NEWNAME", "said his launcher is better than", "$NEWNAME", "'s."]
+    ["$NEWNAME", "said his", "launcher", "is better than", "$NEWNAME", "'s."]
 ]
 
 function randomInt(min, max) {
@@ -450,7 +449,7 @@ function genDrama()
             }
         }
         else{
-            if(item == "Microsoft" || item == "Jeff Bezos"){
+            if(item == "Microsoft" || item == "Jeff Bezos" || item == "Create" || item == "launcher"){
                 imageSequence.push(item)
             }
             dramaString += item
