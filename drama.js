@@ -183,6 +183,7 @@ let opinions = [
     "stoneblock/skyblock sucks",
     "botania sucks",
     "ae2 sucks",
+    "clay is balanced"
 ]
 
 let drama = [
@@ -224,7 +225,7 @@ function genDrama(){
     for(let i = 0; i < dramatics.length; i++){
         let item = dramatics[i];
 
-        if(item != "." && i != 0 && !item.endsWith("HIDDEN")){
+        if(item != "." && i != 0 && !item.endsWith("HIDDEN") || item != "\"" || item != "$OPINION"){
             dramaString += " "
         }
 
@@ -277,7 +278,7 @@ function genDrama(){
 
             dramaString += chosenModloader
         }
-        else if(item == "$MODLOADER"){
+        else if(item == "$OPINION"){
             let chosenOpinion = opinions[randomInt(0, opinions.length - 1)]
 
             dramaString += chosenOpinion
