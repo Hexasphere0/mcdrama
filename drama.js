@@ -16,6 +16,7 @@ let features = [
     "Dayblooms",
     "the Stargate",
     "Hypixel Integration",
+    "the infinity ingot singularity"
 ]
 
 // %& = him her their
