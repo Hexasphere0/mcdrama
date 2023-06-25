@@ -260,6 +260,7 @@ let imageMappings = {
     "CaffieneMC":                         "groups/caffiene_mc.png",
     "Mcjty discord":                      "groups/mcjty_discord.webp",
     "Minecraft discord":                  "groups/minecraft_discord.png",
+    "MMD":                                "groups/mmd.png",
     //projects
     "GTCEU":                      "projects/GTCEU.png",
     "GT6":                        "projects/GT6.png",
@@ -283,8 +284,11 @@ let imageMappings = {
     "GT5U":                       "projects/GT5U.jpeg",
     "Minecraft":                  "projects/Minecraft.png",
     "AE2: Trousers Edition":      "projects/AE2 Trousers Edition.png",
-    "Gregtech CEU":               "projects/Gregtech CEU.png",
-    // Add more image mappings here...
+    "Gregtech CEU":               "projects/GTCEU.png",
+    // misc
+    "Microsoft":          "misc/Microsoft.png",
+    "Jeff Bezos":         "misc/JeffBezos.jpg",
+    "Minecraft":          "misc/Minecraft.jpg"
 };
 
 // Function to retrieve the image based on the phrase and display it
@@ -316,7 +320,7 @@ let drama = [
     ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and converts it to", "$MODLOADER", ".", "$VAR 1", "$SELFDAMAGE 1", "."],
     ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ".", "The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
     ["$NEWNAME", "drops", "$FEATURE", "support from", "$VAR 0 PROJECT", ".", "The", "$GENERIC_GROUP", "rages."],
-    ["Microsoft buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince Jeff Bezos to buy Microsoft and delete Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."],
+    ["Microsoft", "buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince", "Jeff Bezos", "to buy", "Microsoft", "and delete", "Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."],
     ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 0", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."],
     ["$NEWNAME", "tried to port Create to 1.12. The police arrested him and gave him a 25 year sentence in jail."],
     ["$NEWNAME", "took control of", "$VAR 0 PROJECT", "and kicked all the other devs out."],
@@ -445,6 +449,9 @@ function genDrama()
             }
         }
         else{
+            if(item == "Microsoft" || item == "Jeff Bezos"){
+                imageSequence.push(item)
+            }
             dramaString += item
         }
     }
