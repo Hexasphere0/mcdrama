@@ -14,7 +14,7 @@ let features = [
     "Optifine Support",
     "Solar panels",
     "Dayblooms",
-    "the Stargate"
+    "the Stargate",
 ]
 
 // %& = him her their
@@ -168,6 +168,10 @@ let drama = [
     ["$NEWNAME", "said botania is a tech mod."],
     ["$NEWNAME", "said GREGTECH SUCKS."],
     ["$NEWNAME", "and", "$NEWNAME", "obtain the stargate, to the dismay of", "DreamMasterXXL", ".", "He secretly bans them from the", "GTNH discord", "."],
+    ["$NEWNAME", "added", "$FEATURE", "to", "$VAR 0 PROJECT", "to the dismay of", "$GENERIC_GROUP", "."],
+    ["$NEWNAME", "refuses to support", "$NEWNAME HIDDEN", "$VAR 1 PROJECT"],
+    ["$NEWNAME", "renames", "$VAR 0 PROJECT", "to", "$NEWNAME HIDDEN", "$VAR 1 PROJECT"],
+    ["$NEWNAME", "adds", "$FEATURE", "to", "$VAR 0 PROJECT"]
 ]
 
 function randomInt(min, max) {
