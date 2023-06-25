@@ -155,6 +155,12 @@ let people = [
         "groups": ["MMD"],
         "projects": ["p455w0rdlib"],
         "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "baileyholl",
+        "groups": ["Ars Nouveau discord"],
+        "projects": ["Ars Nouveau", "Ars Creo"],
+        "pronouns": ["him", "his", "he"]
     }
 ]
 
