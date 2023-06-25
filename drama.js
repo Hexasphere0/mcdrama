@@ -360,8 +360,9 @@ function genDrama()
             if(!item.endsWith("HIDDEN"))
             {
                 dramaString += chosenPerson.name
-            }
+                
             imageSequence.push(chosenPerson.name);
+            }
         }
         else if(item == "$FEATURE")
         {
