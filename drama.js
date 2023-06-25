@@ -403,7 +403,6 @@ function genDrama()
             chosenDamage = chosenDamage.replace('%%', variables[person].pronouns[1])
 
             dramaString += chosenDamage
-            //TODO: not working
             imageSequence.push(damage_phrase); // Add the image name to the sequence
         }
         else if(item == "$MODLOADER")
