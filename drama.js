@@ -161,6 +161,18 @@ let people = [
         "groups": ["Ars Nouveau discord"],
         "projects": ["Ars Nouveau", "Ars Creo"],
         "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "kinglemming",
+        "groups": ["COFH discord"],
+        "projects": ["Thermal Expansion", "Thaumcraft"],
+        "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "what the hek",
+        "groups": ["COFH discord"],
+        "projects": ["Thaumcraft"],
+        "pronouns": ["him", "his", "he"]
     }
 ]
 
