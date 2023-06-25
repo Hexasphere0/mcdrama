@@ -164,7 +164,10 @@ let drama = [
     ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 0", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."],
     ["$NEWNAME", "tried to port Create to 1.12. The police arrested", "$VAR 0 PRONOUNS0", "and gave", "$VAR 0 PRONOUNS0", "a 25 year sentence in jail."],
     ["$NEWNAME", "took control of", "$VAR 0 PROJECT", "and kicked all the other devs out."],
-    ["$NEWNAME", "said", "$VAR 0 PRONOUNS1", "launcher is better than", "$NEWNAME", "'s."]
+    ["$NEWNAME", "said", "$VAR 0 PRONOUNS1", "launcher is better than", "$NEWNAME", "'s."],
+    ["$NEWNAME", "said botania is a tech mod."],
+    ["$NEWNAME", "said GREGTECH SUCKS."],
+    ["$NEWNAME", "and", "$NEWNAME", "obtain the stargate, to the dismay of", "DreamMasterXXL", ".", "He secretly bans them from the", "GTNH discord", "."],
 ]
 
 function randomInt(min, max) {
