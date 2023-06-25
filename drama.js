@@ -284,10 +284,11 @@ let imageMappings = {
     "AE2: Trousers Edition":      "projects/AE2 Trousers Edition.png",
     "Gregtech CEU":               "projects/GTCEU.png",
     // misc
-    "Microsoft":          "misc/Microsoft.png",
-    "Jeff Bezos":         "misc/JeffBezos.jpg",
-    "Minecraft":          "misc/Minecraft.jpg",
-    "launcher":           "misc/launcher.png"
+    "Microsoft":          "misc/microsoft.png",
+    "Jeff Bezos":         "misc/jeffbezos.jpg",
+    "Minecraft":          "misc/minecraft.jpg",
+    "launcher":           "misc/launcher.png",
+    "Curseforge":         "misc/curseforge.png"
 };
 
 // Function to retrieve the image based on the phrase and display it
@@ -315,9 +316,8 @@ let drama = [
     ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because", "$VAR 1 PRONOUNS", "added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages", "."],
     ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and adds", "$FEATURE", ".", "$VAR 1", "$SELFDAMAGE 1", "."],
     ["$NEWNAME", "stops watching too much", "$YOUTUBER", "and starts contributing to the community.", "$FUTURE_PROJECT", "is finally released."],
-    ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ". The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
     ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and converts it to", "$MODLOADER", ".", "$VAR 1", "$SELFDAMAGE 1", "."],
-    ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ".", "The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
+    ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ".", "The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "Curseforge", "page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
     ["$NEWNAME", "drops", "$FEATURE", "support from", "$VAR 0 PROJECT", ".", "The", "$GENERIC_GROUP", "rages."],
     ["Microsoft", "buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince", "Jeff Bezos", "to buy", "Microsoft", "and delete", "Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."],
     ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 0", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."],
@@ -442,6 +442,7 @@ function genDrama()
             else{
                 if(typeof variables[index] == "object"){
                     dramaString += variables[index].name
+                    imageSequence.push(variables[index].name)
                 }
                 else{
                     dramaString += variables[index]
@@ -449,7 +450,7 @@ function genDrama()
             }
         }
         else{
-            if(item == "Microsoft" || item == "Jeff Bezos" || item == "Create" || item == "launcher"){
+            if(item == "Microsoft" || item == "Jeff Bezos" || item == "Create" || item == "launcher" || item == "Curseforge"){
                 imageSequence.push(item)
             }
             dramaString += item
