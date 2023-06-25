@@ -206,7 +206,8 @@ let drama = [
     ["$NEWNAME", "renames", "$VAR 0 PROJECT", "to", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "."],
     ["$NEWNAME", "adds", "$FEATURE", "to", "$VAR 0 PROJECT", "."],
     ["$NEWNAME", "makes EVERYONE admin on", "$VAR 0 GROUP", "."],
-    ["$NEWNAME", "closes", "$NEWNAME", "'s", "pull request", "adding", "$FEATURE", "to the dismay of", "$GENERIC_GROUP", "."]
+    ["$NEWNAME", "closes", "$NEWNAME", "'s", "pull request", "adding", "$FEATURE", "to the dismay of", "$GENERIC_GROUP", "."],
+    ["$NEWNAME", "merges", "$NEWNAME", "'s", "pull request", "adding", "$FEATURE", "to the dismay of", "$GENERIC_GROUP", "."]
 ]
 
 function randomInt(min, max) {
