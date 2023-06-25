@@ -173,6 +173,12 @@ let people = [
         "groups": ["COFH discord"],
         "projects": ["Thaumcraft"],
         "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "KnightMiner",
+        "groups": ["Tinkers Construct discord"],
+        "projects": ["Tinkers Construct"],
+        "pronouns": ["him", "his", "he"]
     }
 ]
 
