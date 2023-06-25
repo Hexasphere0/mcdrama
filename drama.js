@@ -15,6 +15,7 @@ let features = [
     "Solar panels",
     "Dayblooms",
     "the Stargate",
+    "Hypixel Integration",
 ]
 
 // %& = him her their
@@ -24,6 +25,9 @@ let selfDamage = [
     "blows %&self up on the IGBLON SMP",
     "deletes %% discord account",
     "deletes %% youtube account",
+    "walks into an orbital laser drill",
+    "jumps into a smeltery",
+    "blows up %% draconic energy core"
 ]
 
 let futureProjects = [
@@ -33,7 +37,8 @@ let futureProjects = [
     "Chromaticraft 1.20",
     "Create 1.12",
     "Luxite",
-    "Technological Journey 2"
+    "Technological Journey 2",
+    "Forge 2.0"
 ]
 
 let youtubers = [
