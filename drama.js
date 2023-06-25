@@ -158,6 +158,33 @@ let people = [
     }
 ]
 
+let opinions = [
+    "botania is a tech mod",
+    "GREGTECH SUCKS",
+    "twilight forest isnt fun",
+    "vanilla plus is the worst trend",
+    "RLcraft is balanced",
+    "512px texture packs ftw",
+    "kitchen sink packs are the best",
+    "keep inventory is good",
+    "greedycraft is the best pack",
+    "create sucks",
+    "magic mods suck",
+    "TeCh MoDs SuCk",
+    "lycanite mobs W",
+    "gtnh sucks",
+    "1.4.7 is the best version",
+    "i like 1.7.10",
+    "i like 1.12",
+    "i like 1.19",
+    "create is grindy",
+    "mob griefing sucks",
+    "mcreator mods are good",
+    "stoneblock/skyblock sucks",
+    "botania sucks",
+    "ae2 sucks",
+]
+
 let drama = [
     ["$NEWNAME", "bans", "$NEWNAME", "from the", "$VAR 0 GROUP", "because", "$VAR 1 PRONOUNS2", "added", "$FEATURE", ".", "$VAR 0", "is banned from", "$GENERIC_GROUP", ".", "$GENERIC_GROUP", "rages", "."],
     ["$NEWNAME", "forks", "$NEWNAME HIDDEN", "$VAR 1 PROJECT", "and adds", "$FEATURE", ".", "$VAR 1", "$SELFDAMAGE 1", "."],
@@ -167,17 +194,18 @@ let drama = [
     ["$NEWNAME", "infiltrates the", "$NEWNAME HIDDEN", "$VAR 1 GROUP", ".", "The", "$VAR 1 GROUP", "does a hostile takeover of the", "$VAR 0 PROJECT", "curseforge page.", "$NEWNAME", "rages and", "$SELFDAMAGE 2", "."],
     ["$NEWNAME", "drops", "$FEATURE", "support from", "$VAR 0 PROJECT", ".", "The", "$GENERIC_GROUP", "rages."],
     ["Microsoft buys", "$NEWNAME HIDDEN", "$VAR 0 PROJECT", ".", "$VAR 0 PROJECT", "devs convince Jeff Bezos to buy Microsoft and delete Minecraft.", "$NEWNAME", "rages and", "$VAR 1 PROJECT", "is finally released."],
-    ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 0", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."],
+    // honestly this one sucks
+    //    ["$NEWNAME", "got depression because", "$FUTURE_PROJECT", "did not come out.", "$VAR 0", "had to resort to watching", "$YOUTUBER", ".", "The community started to take a blow so", "$VAR 2", "had to start watching more", "$VAR 2", "to get the youtube algorithm going.", "This gained more money so", "$NEWNAME HIDDEN", "$VAR 3 PROJECT", "could take off again."],
     ["$NEWNAME", "tried to port Create to 1.12. The police arrested", "$VAR 0 PRONOUNS0", "and gave", "$VAR 0 PRONOUNS0", "a 25 year sentence in jail."],
     ["$NEWNAME", "took control of", "$VAR 0 PROJECT", "and kicked all the other devs out."],
-    ["$NEWNAME", "said", "$VAR 0 PRONOUNS1", "launcher is better than", "$NEWNAME", "'s."],
-    ["$NEWNAME", "said botania is a tech mod."],
-    ["$NEWNAME", "said GREGTECH SUCKS."],
+    ["$NEWNAME", "says", "$VAR 0 PRONOUNS1", "launcher is better than", "$NEWNAME", "'s."],
+    ["$NEWNAME", "says", "\"", "$OPINION", "\"."],
     ["$NEWNAME", "and", "$NEWNAME", "obtain the stargate, to the dismay of", "DreamMasterXXL", ".", "He secretly bans them from the", "GTNH discord", "."],
     ["$NEWNAME", "added", "$FEATURE", "to", "$VAR 0 PROJECT", "to the dismay of", "$GENERIC_GROUP", "."],
     ["$NEWNAME", "refuses to support", "$NEWNAME HIDDEN", "$VAR 1 PROJECT"],
     ["$NEWNAME", "renames", "$VAR 0 PROJECT", "to", "$NEWNAME HIDDEN", "$VAR 1 PROJECT"],
-    ["$NEWNAME", "adds", "$FEATURE", "to", "$VAR 0 PROJECT"]
+    ["$NEWNAME", "adds", "$FEATURE", "to", "$VAR 0 PROJECT"],
+    ["$NEWNAME", "makes", "$VAR 0 PROJECT", "P2W, to the dismay of", "$GENERIC_GROUP", "."]
 ]
 
 function randomInt(min, max) {
@@ -248,6 +276,11 @@ function genDrama(){
             variables.push(chosenModloader)
 
             dramaString += chosenModloader
+        }
+        else if(item == "$MODLOADER"){
+            let chosenOpinion = opinions[randomInt(0, opinions.length - 1)]
+
+            dramaString += chosenOpinion
         }
         else if(item.startsWith("$VAR")){
             let parts = item.split(" ")
