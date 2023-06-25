@@ -149,6 +149,12 @@ let people = [
         "groups": ["Gregtech CEU discord"],
         "projects": ["AE2: Trousers Edition", "Gregtech CEU"],
         "pronouns": ["him", "his", "he"]
+    },
+    {
+        "name": "p455w0rd",
+        "groups": ["MMD"],
+        "projects": ["p455w0rdlib"],
+        "pronouns": ["him", "his", "he"]
     }
 ]
 
