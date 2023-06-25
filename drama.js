@@ -15,6 +15,9 @@ let features = [
     "Solar panels",
     "Dayblooms",
     "the Stargate",
+    "taint",
+    "warp",
+    "Infusion Altar"
 ]
 
 // %& = him her their
